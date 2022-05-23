@@ -1,0 +1,40 @@
+{
+  "name": "oauth",
+  "version": "1.0.0",
+  "description": "npm init npm install ejs express  npm i passport passport-google-oauth20 npm i cookie-session",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.0",
+    "install": "^0.13.0",
+    "mongoose": "^5.9.28",
+    "npm": "^6.14.7",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-line": "0.0.4",
+    "passport-line-auth": "^0.2.8",
+    "passport-linkedin-oauth2": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PengZhao-GitHub/OAuth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PengZhao-GitHub/OAuth/issues"
+  },
+  "homepage": "https://github.com/PengZhao-GitHub/OAuth#readme"
+}

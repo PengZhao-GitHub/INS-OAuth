@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <style>
+            body{
+                font-family: arial;
+                margin: 0;
+            }
+            nav{
+                background: rgba(0, 163, 231,1);
+                padding: 10px 10px;
+            }
+            nav ul{
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 0;
+            }
+            nav li{
+                list-style-type: none;
+                display: inline-block;
+                margin: 0 10px 0 0;
+            }
+            nav a{
+                color: #fff;
+                font-size: 18px;
+                background: rgba(255,255,255,0.2);
+                text-decoration: none;
+                padding: 10px;
+                display: block;
+            }
+            
+            header{
+                max-width: 960px;
+                margin: 10px auto;
+                padding: 0 10px;
+                color: #333;
+            }
+
+            main  {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+
+            }
+            
+            
+            .google-btn{
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 5px;
+                background: #555;
+                width: 100%;
+            }
+            .facebook-btn{
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 5px;
+                background: #555;
+            }
+            .twitter-btn{
+                display: block;
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 5px;
+                background: #555;
+            }
+            .local-btn{
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 5px;
+                background: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <% if(user) { %>
+                    <li><a href="/auth/logout">Logout</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                <% } else { %>    
+                    <li><a href="/auth/login-index">Login</a></li>
+                <% } %>
+                
+            </ul>
+        </nav>
+        <header>
+            
+        </header>
+        <main>
+
+            <% if(user) { %>
+                <div>Welcome! <%= user.username %>, you have already logged in.</div>
+            <% } else { %>   
+            <!-- #Step 4: Add twitter link -->
+                <div>
+                    <a class="google-btn" href="/auth/google">Google+</a>
+                </div>
+                <div>
+                    <a class="facebook-btn" href="/auth/facebook">Facebook</a>
+                </div>
+                <div>
+                    <a class="twitter-btn" href="/auth/twitter">Twitter</a>
+                </div>
+                <div>
+                    <a class="local-btn" href="/auth/linkedin">Linkedin</a>
+                </div>
+                <div>
+                    <a class="local-btn" href="/auth/line">LINE</a>
+                </div>
+                <div>
+                    <a class="local-btn" href="/local/login">Account/Password</a>
+                </div>
+                
+            <% } %>
+            
+        </main>
+    </body>
+</html>
